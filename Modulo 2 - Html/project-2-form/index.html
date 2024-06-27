@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu veículo para vender mais rápido!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda fácil seu carro!</h1>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+                <form action="">
+                    <div class="box-input">
+                        <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block"
+                            placeholder="Um título para anunciar seu carro" minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block" placeholder="defina um preço"
+                            required>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block"
+                            placeholder="Aqi você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão!"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">Marca <span class="required-field">*</span></label>
+                        <input type="text" name="brand" id="brand" class="block"
+                            placeholder="Insira a marca do seu veículo" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="model">Modelo <span class="required-field">*</span></label>
+                        <input type="text" name="model" id="model" class="block"
+                            placeholder="Coloque o modelo do seu veículo" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="km">Kilometragem<span class="required-field">*</span></label>
+                        <input type="number" name="km" id="km" class="block"
+                            placeholder="Digite a kilometragem do veículo!" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="data">Data de compra<span class="required-field">*</span></label>
+                        <input type="date" name="data" id="data" class="block"
+                            placeholder="Digite a kilometragem do veículo!" required>
+                    </div>
+                    <div class="box-input">
+                        <p>Tipo de câmbio: <span class="required-field">*</span></p>
+                        <input type="radio" name="gear" id="manual">
+                        <label for="manual">Manual</label>
+                        <input type="radio" name="gear" id="automatico">
+                        <label for="automatico">Automático</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="airbag" name="airbag" value="airbag">
+                                <label for="airbag">Airbags</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="alarm" name="alarm" value="alarm">
+                                <label for="alarm">Alarme</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="ac" name="ac" value="ac">
+                                <label for="ac">Ar condicionado</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="reverse_cam" name="reverse_cam"
+                                    value="reverse_cam">
+                                <label for="reverse_cam">Camera de ré</label>
+                            </li>
+                        </ul>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="airbag" name="airbag" value="airbag">
+                                <label for="airbag">Airbags</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="alarm" name="alarm" value="alarm">
+                                <label for="alarm">Alarme</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="ac" name="ac" value="ac">
+                                <label for="ac">Ar condicionado</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="reverse_cam" name="reverse_cam"
+                                    value="reverse_cam">
+                                <label for="reverse_cam">Camera de ré</label>
+                            </li>
+                        </ul>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="airbag" name="airbag" value="airbag">
+                                <label for="airbag">Airbags</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="alarm" name="alarm" value="alarm">
+                                <label for="alarm">Alarme</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="ac" name="ac" value="ac">
+                                <label for="ac">Ar condicionado</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="reverse_cam" name="reverse_cam"
+                                    value="reverse_cam">
+                                <label for="reverse_cam">Camera de ré</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do carro <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg">
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

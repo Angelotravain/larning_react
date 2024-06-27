@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h2>Formulários HTML</h2>
+    <form>
+        <label for="">nome</label>
+        <input type="text" name="" id=""/>
+    </form>
+    </div>
+    <div>
+        <form action="register.php" method="post">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <label for="">Idade</label>
+            <input type="text" name="idade" id="">
+            <input type="tel" name="" id="">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <select name="" id="">
+                <option value="nome">Nome</option>
+                <option value="idade" selected>Idade</option>
+                <option value="salario">Salário</option>
+                <option value="salario">Salário</option>
+            </select>
+
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract" id="" multiple>
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+
+            <textarea name="" id=""></textarea>
+        </form>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Preencha as suas informações</legend>
+            <label for="firstname">Nome:</label>
+            <input type="text" name="firstname" id="">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="">
+        </fieldset>
+    </div>
+    <div>
+        <label for="flavor">Escolha o sabor</label>
+        <input type="text" list="flavors" name="flavor" id="">
+
+        <datalist id="flavors">
+            <option value="cereja"></option>
+            <option value="morango"></option>
+            <option value="caramelo"></option>
+            <option value="chocolate"></option>
+        </datalist>
+    </div>
+    <div>
+        <label for="password">senha</label>
+        <input type="password" name="password" id="">
+    </div>
+    <div>
+        <label for="carro_model">Escolha o modelo do seu carro</label>
+        <div class="radio">
+        <input type="radio" value="bmw" name="car_model" id="">
+        <label for="bmw">Bmw</label>
+        <input type="radio" value="ferrari" name="car_model" id="">
+        <label for="ferrari">Ferrari</label>
+        <input type="radio" value="renault" name="car_model" id="">
+        <label for="renault">Renault</label>
+        </div>
+    </div>
+    <div>
+        <label for="optionals">Opcionais do carro</label>
+        <div class="radio">
+        <input type="checkbox" name="optionals" value="big_tires">
+        <label for="big_tires">Pneus grandes</label>
+                <input type="checkbox" name="optionals[]" value="big_tires" id="big_tires">
+        <label for="big_tires">Pneus grandes</label>
+                <input type="checkbox" name="optionals[]" value="big_tires">
+        <label for="big_tires">Pneus grandes</label>
+        </div>
+
+    </div>
+    <div>
+        <label for="data">Data</label>
+        <input type="date">
+
+        <label for="arquivo">Arquivos</label>
+        <input type="file" name="arquivo" id="">
+    </div>
+    <div>
+        <form action="">
+            <label for="nome2">Nome</label>
+            <input type="text" name="nome2" id="">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+
+            <input type="number" name="" id="">
+
+            <input type="month" name="" id="">
+            <input type="datetime-local" name="" id="">
+            <input type="time" name="" id="">
+            <input type="email" name="" id="">
+
+            <!-- preenche rcom value -->
+
+            <input type="text" name="" value="valor preenchido" id="">
+            <input type="text" name="" value="preenchido" disabled id=""> 
+            <!-- o disable vai ignorar o valor no envio do formulário -->
+             <input type="text" name="" placeholder="preencha essa budega" id="">
+             <input type="text" name="" required id="">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+h1 {
+    color: red;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    p {
+        background-color: red;
+        color: black;
+    }
+}
+
+/* 
+600px e abaixo => celulares
+600 a 792px => tablets
+768 a 992px mini laptops
+acima 992px laptops e computadores
+*/
+
+/* landscape */
+
+h3 {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    h3 {
+        display: block;
+    }
+}

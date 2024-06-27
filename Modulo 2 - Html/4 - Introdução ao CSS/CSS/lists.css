@@ -1,0 +1,35 @@
+ul {
+    border: 1px, solid, blue;
+    padding: 10px;
+}
+
+li {
+    color: darkblue;
+}
+
+
+
+/* classes */
+
+.paragraph {
+    background-color: #000;
+    color: aqua;
+}
+
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 2px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 3px solid pink;
+}
