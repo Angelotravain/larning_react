@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    /* Adicionei Arial e sans-serif como fallback */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    justify-content: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+#container table {
+    border: 1px solid #ddd;
+    width: 100%;
+    /* Faz a tabela ocupar a largura total do container */
+    max-width: 1200px;
+    /* Define uma largura máxima para evitar que a tabela fique muito grande em telas grandes */
+    border-collapse: collapse;
+    /* Remove o espaçamento entre as bordas das células */
+}
+
+#container table thead {
+    background-color: #ddd;
+}
+
+.cabecalho {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    /* Aumenta o padding para uma aparência melhor */
+}
+
+.hidden {
+    display: none;
+}
+
+#tabela td {
+    padding: 10px;
+    /* Aumenta o padding para uma aparência melhor */
+    text-align: center;
+    border: 1px solid #ddd;
+    /* Adiciona bordas às células para melhor visualização */
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        font-size: 18px;
+        /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    #tabela td {
+        padding: 8px;
+        /* Reduz o padding em telas menores */
+    }
+}
+
+.btn-blue {
+    background-color: #345ffd;
+    color: #fff;
+    padding: 5px;
+    margin-right: 4px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.max {
+    font-size: 26px;
+}
+
+.btn-red {
+    background-color: #f02222;
+    color: #fff;
+    padding: 5px;
+    margin-right: 4px;
+    text-decoration: none;
+    border-radius: 5px;
+}
