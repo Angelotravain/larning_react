@@ -18,3 +18,4 @@ const myNewJson = JSON.stringify(mybject);
 
 console.log(myNewJson);
 console.log(typeof myNewJson);
+
